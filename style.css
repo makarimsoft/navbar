@@ -1,0 +1,46 @@
+ body{
+    min-height: 100vh;
+    background-image: url(./koi.fish_.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+ .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(229, 255, 0, 0.952);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+ }
+ .logo{
+    font-size: 32px;
+    color: magenta;
+    text-decoration: none;
+    font-weight: 700;
+ }
+ .navbar a {
+    position: relative;
+    font-size: 25px;
+    color: magenta;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    
+ }
+
+ .navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: brown;
+    transition: .3s;
+ }
+ .navbar a:hover::before {
+    width: 100%;
+ }
